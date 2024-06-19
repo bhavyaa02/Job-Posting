@@ -26,7 +26,7 @@ const RegistrationForm = () => {
         <option value="select">SELECT</option>
         <option value="CS">CS</option>
         <option value="IT">IT</option>
-        <option value="AIDS">AIDS</option>
+        <option value="AIDS">AI&DS</option>
       </select>
       <label>Docs (if any):</label>
 
