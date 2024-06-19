@@ -22,7 +22,7 @@ const RegistrationForm = () => {
       <input type="text" placeholder="Batch" />
       <label>Roll No.:</label>
       <input type="text" placeholder="Roll No." />
-    </div>
+    </div> 
   );
 };
 
