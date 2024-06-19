@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import RegistrationForm from './components/RegistrationForm';
 import CustomQuestionsForm from './components/CustomQuestionsForm';
 import QuestionTable from './components/QuestionTable';
+import './App.css';
 
 const App = () => {
   const [withTracker, setWithTracker] = useState(false);
@@ -18,15 +19,16 @@ const App = () => {
   return (
     <div className="container">
       <div className="header">
-        <img src="profile.jpg" alt="Profile" width="80" height="80" />
         <div>
           <h1>Job Posting</h1>
-          <p> Details</p>
+          
         </div>
       </div>
+
       <RegistrationForm />
       <div className="section">
         <h2>Tracker</h2>
+        <hr className='hr'/>
         <label>With Tracker?</label>
         <select onChange={handleTrackerChange}>
           <option value="no">No</option>

@@ -4,24 +4,34 @@ const RegistrationForm = () => {
   return (
     <div className="section">
       <h2>Basic Details</h2>
-      <label>Full Name:</label>
-      <input type="text" placeholder="Full Name" />
-      <label>Date of Birth:</label>
-      <input type="date" />
-      <label>Gender:</label>
+      <label>Job Desciption:</label>
+      <input type="text" placeholder="Job Desciption" />
+      <label>Package details:</label>
+      <input type="text" />
+      <label>Roles:</label>
+      <input type="text" placeholder="Roles" />
+          
+      
+      
+      <label>10th Criteria:</label>
+      <input type="number" placeholder="percent" />
+      <label>12th Criteria:</label>
+      <input type="number" placeholder="percent" />
+      <label>Degree Criteria:</label>
+      <input type="number" placeholder="percent" />
+      <label>Diploma Criteria:</label>
+      <input type="number" placeholder="percent" />
+      <label>Eligible Branches:</label>
       <select>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
+        <option value="select">SELECT</option>
+        <option value="CS">CS</option>
+        <option value="IT">IT</option>
+        <option value="AIDS">AIDS</option>
       </select>
-      <label>Current/Latest College:</label>
-      <input type="text" placeholder="Current/Latest College" />
-      <label>Current Course:</label>
-      <input type="text" placeholder="Current Course" />
-      <label>Batch:</label>
-      <input type="text" placeholder="Batch" />
-      <label>Roll No.:</label>
-      <input type="text" placeholder="Roll No." />
+      <label>Docs (if any):</label>
+
+      <input type="file" accept=".pdf,.doc,.docx,.txt" placeholder="Add file" />
+      
     </div> 
   );
 };
