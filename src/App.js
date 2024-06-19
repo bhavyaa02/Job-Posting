@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import RegistrationForm from './components/RegistrationForm';
+import CustomQuestionsForm from './components/CustomQuestionsForm';
+import QuestionTable from './components/QuestionTable';
 
-function App() {
+const App = () => {
+  const [withTracker, setWithTracker] = useState(false);
+  const [questions, setQuestions] = useState([]);
+
+  const handleTrackerChange = (e) => {
+    setWithTracker(e.target.value === 'yes');
+  };
+
+  const handleAddQuestion = (question) => {
+    setQuestions([...questions, question]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="header">
+        <img src="profile.jpg" alt="Profile" width="80" height="80" />
+        <div>
+          <h1>Job Posting</h1>
+          <p> Details</p>
+        </div>
+      </div>
+      <RegistrationForm />
+      <div className="section">
+        <h2>Tracker</h2>
+        <label>With Tracker?</label>
+        <select onChange={handleTrackerChange}>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+      </div>
+      {withTracker && (
+        <CustomQuestionsForm onAddQuestion={handleAddQuestion} />
+      )}
+      {withTracker && questions.length > 0 && (
+        <QuestionTable questions={questions} />
+      )}
+      <div className="section">
+        <button type="submit">Submit</button>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
