@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
   margin: 0;
   padding: 0;
-  background-color: #e6f2ff; /* Pale blue background */
+  background-color: #e6f2ff; 
 }
 
 .container {
@@ -74,11 +74,12 @@ body {
   padding: 10px;
   width: calc(100% - 20px); 
   margin: 10px 10px;
-  border: solid #adc4df;
-  border-radius: 5px;
-  border-width: 1px;
-  background-color: #f0f8ff; 
+  border: 1px solid #adc4df; /* Less curved border */
+  border-radius: 3px; /* Slightly less rounded corners */
+  background-color: #fff; /* White background color */
 }
+
+
 
 .section select {
   line-height: 1.5; 
@@ -89,7 +90,6 @@ body {
   padding: 10px 20px;
   color: #fff;
   background-color: #3784f6;
-  background-color: ;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -103,6 +103,7 @@ body {
 
 .table-container {
   overflow-x: auto;
+  
 }
 
 table {
@@ -119,9 +120,11 @@ table td {
 }
 
 table th {
-  background-color: #f2f2f2;
+  background-color: #417ce2;
+  color: #fff;
   font-weight: bold;
 }
+
 
 button[type="submit"] {
   display: inline-block;
