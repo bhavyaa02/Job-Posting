@@ -7,20 +7,20 @@ const RegistrationForm = () => {
       <label>Job Desciption:</label>
       <input type="text" placeholder="Job Desciption" />
       <label>Package details:</label>
-      <input type="text" />
+      <input type="text"  placeholder="Package" />
       <label>Roles:</label>
       <input type="text" placeholder="Roles" />
           
       
       
       <label>10th Criteria:</label>
-      <input type="number" placeholder="percent" />
+      <input type="number" placeholder="percentage" />
       <label>12th Criteria:</label>
-      <input type="number" placeholder="percent" />
+      <input type="number" placeholder="percentage" />
       <label>Degree Criteria:</label>
-      <input type="number" placeholder="percent" />
+      <input type="number" placeholder="percentage" />
       <label>Diploma Criteria:</label>
-      <input type="number" placeholder="percent" />
+      <input type="number" placeholder="percentage" />
       <label>Eligible Branches:</label>
       <select>
         <option value="select">SELECT</option>
